@@ -7,8 +7,8 @@ class ArticlesForm(ModelForm):
         fields = ['title', 'anons', 'full_text', 'date']
 
         widgets = {
-            "title": TextInput(attrs={'class': 'form-control', 'placeholder': 'Назва статті'}),
-            "anons": TextInput(attrs={'class': 'form-control', 'placeholder': 'Анонс статті'}),
-            "date": DateTimeInput(attrs={'class': 'form-control', 'placeholder': 'Дата публікації'}),
-            "full_text": Textarea(attrs={'class': 'form-control', 'placeholder': 'Текст статті'})
+            "title": TextInput(attrs={'class': 'form-control', 'placeholder': 'П.І.Б'}),
+            "anons": TextInput(attrs={'class': 'form-control', 'placeholder': 'Номер телефону'}),
+            "date": TextInput(attrs={'class': 'form-control', 'placeholder': 'Місто'}),
+            "full_text": TextInput(attrs={'class': 'form-control', 'placeholder': 'Відділення'})
         }

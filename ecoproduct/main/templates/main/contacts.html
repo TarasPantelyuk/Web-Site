@@ -18,16 +18,24 @@
     <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Головна</li></a>
     <a href="{% url 'about' %}"><li><i class="fa-solid fa-address-card"></i>Магазин</li></a>
     <a href="{% url 'news_home' %}"><li><i class="fa-solid fa-address-book"></i>Контакти</li></a>
-    <!--<a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Додати запис</button></li></a>-->
 </ul>
     <style> a { text-decoration: none;}</style>
 </aside>
 <main>
     {% block content %}
     {% endblock %}
-    <head>
-          <img src="{% static 'main/img/141117B8-17DD-4757-ABD4-237D92824797.png' %}"
-</head>
+    <div class="qrcode">
+        <img src="{% static 'main/img/ca0273989940004f1cc66a5f4e962c1c.png' %}">
+    </div>
+    <div class="qrcode1">
+        <h4><a href="https://maps.app.goo.gl/VaSc6x7mKnk77Zdg8?g_st=ic" target="_blank">Location</a></h4>
+        <img src="{% static 'main/img/2691ec9cd86dc2c2d467ac799ff3448a.png' %}">
+    </div>
+    <div class="qrcode2">
+        <h2>Call:</h2>
+        <h4>+380680514244-Іван +380686252049-Галя</h4>
+
+    </div
 </main>
 
 </body>

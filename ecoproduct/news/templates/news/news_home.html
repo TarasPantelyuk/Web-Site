@@ -1,16 +1,17 @@
-{% extends 'main/layout.html' %}
+{% extends 'main/contacts.html' %}
 
-{% block title %}Новини на сайті{% endblock %}
+{% block title %}EcoProduct{% endblock %}
 
 {% block content %}
 <div class="features">
-    <h1>Новини на сайті</h1>
+    <h1>EcoProduct</h1>
+    <h4><a href="https://t.me/EcoProductSuvenirsbot" target="_blank">Telegram-Bot</a></h4>
 
-   {% for el in news %}
+   <!--{% for el in news %}
     <div class="alert alert-warning">
         <h3>{{ el.title }}</h3>
         <p>{{ el.anons }}</p>
     </div>
-    {% endfor %}
+    {% endfor %}-->
 </div>
 {% endblock %}
